@@ -1,0 +1,60 @@
+
+
+
+Criar classes mapeadas que tenham herança
+trnsação @
+
+// TODO Persistencia
+        // Criação e configuração de estrutura para acessar banco de dados
+        // Usar SQL nativa
+        // Pesquisas com Pegeable (a forma correta)
+        // Estudar sobre relacionamentos no banco
+        // Construir relacionamentos com JPA
+        //estudar no banco de dados relacionamento 1:1 e mapear no java tbm
+        -Specification
+            https://www.hascode.com/2014/02/creating-elegant-typesafe-queries-for-jpa-mongodbmorphia-and-lucene-using-querydsl/
+            https://spring.io/blog/2011/04/26/advanced-spring-data-jpa-specifications-and-querydsl/
+        -trasações globais com JTA
+            https://www.baeldung.com/java-transactions
+        -@Transactional
+            https://www.baeldung.com/spring-transactional-propagation-isolation
+
+
+estado da entidade JPA
+
+        // Usar JPQL
+        // Como encapsular o retorno do banco de dados num objeto, sendo que foi feito varios 'inner joins' e a resposta q vem não tem objeto proprio
+
+        // configurar 2 datasource ( relacional e relacional) e (relacional e não relacional) https://howtodoinjava.com/spring-boot2/datasource-configuration/
+
+
+//chave primaria composta no banco e mapear no JPA https://receitasdecodigo.com.br/hibernate/chaves-compostas-com-hibernate
+
+//mapeamento de herança utilizando JPA.
+  As três estratégias(SINGLE_TABLE, JOINED e TABLE_PER_CLASS) tem vantagens e desvantagens,
+
+//como funciona o auto relacionamento no JPA??
+
+//query segundo nivel??
+
+Consultas com JPA:
+Querydsl
+JPQL
+
+
+o que é??
+//Big IP
+
+pq usar Serialization?
+https://www.javacodegeeks.com/2010/07/java-best-practices-high-performance.html
+
+problemas de desempenho  mapeando coleções
+https://www.javacodegeeks.com/2011/02/hibernate-mapped-collections.html
+
+Leituras:
+https://emmanuelneri.com.br/2018/03/22/melhorando-performance-do-pool-de-conexoes-com-hikari/
+https://emmanuelneri.com.br/2018/07/09/configuracoes-distribuidas-com-spring-cloud-config/
+http://www.mauda.com.br/?p=1930
+
+//usando pageable em nativeQuery
+https://thorben-janssen.com/native-queries-with-spring-data-jpa/
