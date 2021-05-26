@@ -20,7 +20,6 @@ public class CourseService {
 
     public Course create(CourseDTO courseDTO) {
 
-        //TODO resolver problema do erro de constraint
         var department = departmentRepository.getOne(courseDTO.getDepartmentId());
         var courseToSave = courseDTO.toEntity();
         courseToSave.setDepartment(department);

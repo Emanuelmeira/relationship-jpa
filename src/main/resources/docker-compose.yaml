@@ -1,0 +1,34 @@
+version: '3'
+
+services: 
+    postgres:
+        image: postgres:13.3
+        container_name: "postgres"
+        volumes: 
+            - ./data:/var/lib/postgresql/data
+        environment: 
+            POSTGRES_PASSWORD: "12345"
+        ports: 
+            - "5432:5432"
+        networks: 
+            - network-postgres
+    
+    pgadmin-compose:
+        image: dpage/pgadmin4
+        container_name: "pgadmin4"
+        volumes: 
+            - ./data-pgadmin:/var/lib/pgadmin
+        environment:
+            PGADMIN_DEFAULT_EMAIL: "emmitmeira@gmail.com"
+            PGADMIN_DEFAULT_PASSWORD: "12345"
+        ports:
+            - "16543:80"
+        depends_on:
+            - postgres
+        networks:
+            - network-postgres
+
+networks:
+    network-postgres:
+        driver: bridge
+
