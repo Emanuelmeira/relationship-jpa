@@ -25,7 +25,7 @@ public class ClassRoomTest {
     public void getAllClazz() {
 
         List<ClassRoom> list = classRoomRepository.findAll();
-        list.forEach(x -> System.out.println(x.getId() +"_"+ x.getStart()));
+        list.forEach(x -> System.out.println(x.getId() +"_"+ x.getDateOfStartCourse()));
     }
 
     @Test

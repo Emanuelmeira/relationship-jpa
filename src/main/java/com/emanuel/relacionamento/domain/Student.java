@@ -10,8 +10,6 @@ import java.io.Serializable;
 @Table(name = "ALUNO", schema = "public")
 public class Student implements Serializable {
 
-
-
     @Id
     @Column(name = "ra")
     @GeneratedValue(strategy = GenerationType.IDENTITY)

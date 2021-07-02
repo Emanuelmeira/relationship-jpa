@@ -26,10 +26,10 @@ public class ClassRoom {
     private String timeCourse;
 
     @Column(name = "data_inicio")
-    private LocalDate start;
+    private LocalDate dateOfStartCourse;
 
     @Column(name = "data_fim")
-    private LocalDate end;
+    private LocalDate dateOfEndCourse;
 
     public Long getId() {
         return id;
@@ -63,19 +63,19 @@ public class ClassRoom {
         this.timeCourse = timeCourse;
     }
 
-    public LocalDate getStart() {
-        return start;
+    public LocalDate getDateOfStartCourse() {
+        return dateOfStartCourse;
     }
 
-    public void setStart(LocalDate start) {
-        this.start = start;
+    public void setDateOfStartCourse(LocalDate dateOfStartCourse) {
+        this.dateOfStartCourse = dateOfStartCourse;
     }
 
-    public LocalDate getEnd() {
-        return end;
+    public LocalDate getDateOfEndCourse() {
+        return dateOfEndCourse;
     }
 
-    public void setEnd(LocalDate end) {
-        this.end = end;
+    public void setDateOfEndCourse(LocalDate dateOfEndCourse) {
+        this.dateOfEndCourse = dateOfEndCourse;
     }
 }

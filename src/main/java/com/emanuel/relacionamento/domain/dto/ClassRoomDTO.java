@@ -54,8 +54,8 @@ public class ClassRoomDTO {
 
     public ClassRoom toEntity() {
         ClassRoom classRoom = new ClassRoom();
-        classRoom.setStart(getDateStart());
-        classRoom.setEnd(getDateEnd());
+        classRoom.setDateOfStartCourse(getDateStart());
+        classRoom.setDateOfEndCourse(getDateEnd());
         classRoom.setTimeCourse(getTimeCourse());
         classRoom.setNumberOfStudent(getNumberOfStudent());
         return classRoom;
