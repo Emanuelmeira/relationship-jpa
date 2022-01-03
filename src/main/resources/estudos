@@ -1,5 +1,5 @@
 
-
+a
 
 Criar classes mapeadas que tenham herança
 trnsação @
@@ -31,7 +31,7 @@ estado da entidade JPA
 //chave primaria composta no banco e mapear no JPA https://receitasdecodigo.com.br/hibernate/chaves-compostas-com-hibernate
 
 //mapeamento de herança utilizando JPA.
-  As três estratégias(SINGLE_TABLE, JOINED e TABLE_PER_CLASS) tem vantagens e desvantagens,
+  // As três estratégias(SINGLE_TABLE, JOINED e TABLE_PER_CLASS) tem vantagens e desvantagens,
 
 //como funciona o auto relacionamento no JPA??
 
